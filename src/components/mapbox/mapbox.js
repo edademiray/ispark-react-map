@@ -11,11 +11,9 @@ function Mapbox() {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [zoom, setZoom] = useState(9);
-
 
     useEffect(() => {
-        if (map.current) return; // initialize map only once
+        if (map.current) return; 
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
             style: 'mapbox://styles/edademiray/ckyo9bpo82hm514o4b8d1ukjy',
